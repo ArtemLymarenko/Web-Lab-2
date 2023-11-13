@@ -62,7 +62,8 @@
 .button-white:hover > span {
   background: white;
   background-clip: text;
-  color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   transition: all 0.4s ease;
 }
 
