@@ -1,0 +1,89 @@
+#advantages-section {
+  background-color: white;
+}
+
+.container {
+  padding: 60px 60px 0 60px;
+}
+
+.container > h2 {
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: 1.8px;
+}
+
+.container > p {
+  max-width: 1020px;
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 36px;
+  letter-spacing: 1.2px;
+}
+
+.container > ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 60px;
+  row-gap: 50px;
+  margin-top: 66px;
+}
+
+.container > ul > li > p {
+  color: #4568a1;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  letter-spacing: 0.6px;
+}
+
+.container > ul > li .row {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.container > ul > li .row > h3 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0.72px;
+}
+
+.enroll-block .content {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding: 0 45px;
+  margin-top: 102px;
+}
+
+.enroll-block .content > p {
+  max-width: 920px;
+  max-height: 150px;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
+  letter-spacing: 0.72px;
+}
+
+.advantages-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 180px;
+  width: 270px;
+  height: 80px;
+  font-size: 30px;
+  font-weight: 700;
+  color: white;
+  background: linear-gradient(86deg, #383a3e 1.73%, #005ef1 96.54%);
+  border-radius: 10px;
+}
+
+.advantages-button:hover {
+  color: #005ef1;
+  background: white;
+  border: 1px solid #005ef1;
+  transition: color 0.4s ease;
+}

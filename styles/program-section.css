@@ -1,0 +1,86 @@
+#program-section {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 80px;
+  color: white;
+  background-color: black;
+  padding: 60px 60px;
+}
+
+#program-section > h2 {
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: 1.8px;
+  text-align: center;
+  background: linear-gradient(270deg, #005ef1 0%, #fff 99.95%);
+  background-clip: text;
+  color: transparent;
+}
+
+#program-section > p {
+  max-width: 1020px;
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 36px;
+  text-align: center;
+  letter-spacing: 1.2px;
+}
+
+.topics-block {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 90px;
+  row-gap: 60px;
+  margin: 45px 0;
+}
+
+.topics-block .row {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+.topics-block .topic-item .row > h3 {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 36px;
+}
+
+.topics-block .topic-item > p {
+  margin-top: 15px;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
+}
+
+.button-block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 70px;
+}
+
+.get-program-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 180px;
+  width: 350px;
+  height: 80px;
+  font-size: 30px;
+  font-weight: 700;
+  color: white;
+  background: linear-gradient(86deg, #383a3e 1.73%, #005ef1 96.54%);
+  border-radius: 10px;
+}
+
+.get-program-button:hover {
+  color: #005ef1;
+  background: white;
+  border: 1px solid #005ef1;
+  transition: color 0.4s ease;
+}

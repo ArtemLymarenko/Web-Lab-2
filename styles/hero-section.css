@@ -1,0 +1,72 @@
+#hero-section {
+  background-color: #6092e0;
+}
+
+#hero-section .row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 100px 0;
+}
+
+#hero-section .row > img {
+  max-width: 100%;
+  max-height: 624px;
+  margin-right: 60px;
+  display: block;
+}
+
+#hero-section .description {
+  margin-left: 60px;
+}
+
+#hero-section .description h1 {
+  color: white;
+  margin-bottom: 50px;
+  max-width: 1110px;
+  font-size: 80px;
+  font-weight: 900;
+  letter-spacing: 1.2px;
+}
+
+#hero-section .description p {
+  color: white;
+  margin-bottom: 45px;
+  max-width: 690px;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 39px;
+  letter-spacing: 1.3px;
+}
+
+.button-white > span {
+  font-size: 32px;
+  font-weight: 700;
+  background: linear-gradient(270deg, #005ef1 -32.46%, #232529 135.45%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.button-white {
+  display: flex;
+  max-width: 300px;
+  height: 80px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  background: white;
+}
+
+.button-white:hover > span {
+  background: white;
+  background-clip: text;
+  color: transparent;
+  transition: all 0.4s ease;
+}
+
+.button-white:hover {
+  background: linear-gradient(86deg, #383a3e 1.73%, #005ef1 96.54%);
+  transition: 0.5s ease;
+}

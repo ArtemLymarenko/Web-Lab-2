@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/styles.css" type="text/css" />
     <meta
       name="description"
       content="Do you want to become a FullStack Developer NOW? 
@@ -13,8 +14,8 @@
   <body>
     <div class="fullpage">
       <header class="header">
-        <a href="/" class="logo-img" style="background-color: #6092e0">
-          <img src="./asserts/images/LOGO.svg" alt="Logo" />
+        <a href="/" class="logo-img">
+          <img src="./asserts/images/GOIT.svg" alt="Logo" />
         </a>
         <nav class="navigation">
           <ul class="menu">
@@ -30,7 +31,7 @@
             <li>
               <a href="#pricing-section">Pricing</a>
             </li>
-            <li>
+            <li class="header-btn">
               <a href="#form-section">Enroll</a>
             </li>
           </ul>
@@ -44,7 +45,7 @@
       <section id="hero-section">
         <div class="row" id="hero-banner">
           <div class="description">
-            <h1>Become Fullstack developer NOW</h1>
+            <h1>Become Fullstack developer now</h1>
             <p>
               Junior Fullstack Developer training program, where you will learn
               how to create modern websites and applications from scratch!
@@ -120,8 +121,8 @@
                 want to start your career in IT faster, leave an application and
                 the manager will help you choose the optimal format.
               </p>
+              <a href="#form-section" class="advantages-button">Enroll</a>
             </div>
-            <a href="#form-section" class="button-blue"><span>Enroll</span></a>
           </div>
         </div>
       </section>
@@ -132,6 +133,7 @@
           requirements of the IT industry and only applied skills that you can
           immediately put into practice.
         </p>
+
         <div class="topics-block">
           <div class="topic-item">
             <div class="row">
@@ -186,9 +188,9 @@
             </p>
           </div>
         </div>
-        <a href="/get-program" class="button-blue"
-          ><span>Get full program</span></a
-        >
+        <div class="button-block">
+          <a href="/get-program" class="get-program-button">Get full program</a>
+        </div>
       </section>
       <section id="tutors-section">
         <h2>Course tutors</h2>
@@ -197,6 +199,7 @@
           <div class="tutor-item">
             <img src="./asserts/images/Lane-Simon.png" alt="Lane Simon" />
             <h3>Lane Simon</h3>
+            <h4>Frontend Lead in Compstack</h4>
             <p>
               Over 10 years of the main background in Backend projects. Main
               technologies – JavaScript, Nodejs, PostgreSQL, MongoDB, Redis,
@@ -206,6 +209,7 @@
           <div class="tutor-item">
             <img src="./asserts/images/Malcom-Bird.png" alt="Malcom Bird" />
             <h3>Malcom Bird</h3>
+            <h4>Fullstack developer in SoftServe</h4>
             <p>
               Over 10 years of the main background in Backend projects. Main
               technologies – JavaScript, Nodejs, PostgreSQL, MongoDB, Redis,
@@ -218,6 +222,7 @@
               alt="Jeremy Sarratt"
             />
             <h3>Jeremy Sarratt</h3>
+            <h4>Backend developer in N-iX</h4>
             <p>
               Over 10 years of the main background in Backend projects. Main
               technologies – JavaScript, Nodejs, PostgreSQL, MongoDB, Redis,
@@ -227,69 +232,63 @@
         </div>
       </section>
       <section id="pricing-section">
+        <h3>Pricing and features</h3>
+
         <!-- Tab links -->
         <div class="tab">
-          <button class="tablinks" onclick="openProgram(event, 'Standart')">
+          <button class="active" onclick="openProgram(event, 'Standart')">
             Standart
           </button>
-          <button class="tablinks" onclick="openProgram(event, 'PRO')">
-            PRO
-          </button>
-          <button class="tablinks" onclick="openProgram(event, 'PRO+')">
-            PRO+
-          </button>
+          <button onclick="openProgram(event, 'PRO')">PRO</button>
+          <button onclick="openProgram(event, 'PRO+')">PRO+</button>
         </div>
 
         <!-- Tab content -->
-        <div id="Standart" class="tabcontent">
-          <h3>Program Standart</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur. Nibh egestas congue diam
-            cursus nunc. Venenatis netus pellentesque et tristique. Venenatis ac
-            ut id sed magna viverra.Venenatis netus pellentesque et tristique.
-            Venenatis ac ut id sed magna viverra.Venenatis netus pellentesque et
-            tristique. Venenatis ac ut id sed magna viverra. Venenatis ac ut id
-            sed magna viverra.Venenatis netus pellentesque et tristique.
-            Venenatis ac ut id sed magna viverra.Venenatis ac ut id sed magna
-            viverra.Venenatis netus pellentesque et tristique.
-          </p>
-          <a href="#form-section" class="button-blue"
-            ><span>Get for 50$</span></a
-          >
-        </div>
+        <div class="tabcontent">
+          <div id="content" class="active">
+            <h3>Program Standart</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur. Nibh egestas congue diam
+              cursus nunc. Venenatis netus pellentesque et tristique. Venenatis
+              ac ut id sed magna viverra.Venenatis netus pellentesque et
+              tristique. Venenatis ac ut id sed magna viverra.Venenatis netus
+              pellentesque et tristique. Venenatis ac ut id sed magna viverra.
+              Venenatis ac ut id sed magna viverra.Venenatis netus pellentesque
+              et tristique. Venenatis ac ut id sed magna viverra.Venenatis ac ut
+              id sed magna viverra.Venenatis netus pellentesque et tristique.
+            </p>
+            <a href="#form-section">Get for 50$</a>
+          </div>
 
-        <div id="PRO" class="tabcontent">
-          <h3>Program PRO</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur. Nibh egestas congue diam
-            cursus nunc. Venenatis netus pellentesque et tristique. Venenatis ac
-            ut id sed magna viverra.Venenatis netus pellentesque et tristique.
-            Venenatis ac ut id sed magna viverra.Venenatis netus pellentesque et
-            tristique. Venenatis ac ut id sed magna viverra. Venenatis ac ut id
-            sed magna viverra.Venenatis netus pellentesque et tristique.
-            Venenatis ac ut id sed magna viverra.Venenatis ac ut id sed magna
-            viverra.Venenatis netus pellentesque et tristique.
-          </p>
-          <a href="#form-section" class="button-blue"
-            ><span>Get for 75$</span></a
-          >
-        </div>
+          <div id="content">
+            <h3>Program PRO</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur. Nibh egestas congue diam
+              cursus nunc. Venenatis netus pellentesque et tristique. Venenatis
+              ac ut id sed magna viverra.Venenatis netus pellentesque et
+              tristique. Venenatis ac ut id sed magna viverra.Venenatis netus
+              pellentesque et tristique. Venenatis ac ut id sed magna viverra.
+              Venenatis ac ut id sed magna viverra.Venenatis netus pellentesque
+              et tristique. Venenatis ac ut id sed magna viverra.Venenatis ac ut
+              id sed magna viverra.Venenatis netus pellentesque et tristique.
+            </p>
+            <a href="#form-section">Get for 75$</a>
+          </div>
 
-        <div id="PRO+" class="tabcontent">
-          <h3>Program PRO+</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur. Nibh egestas congue diam
-            cursus nunc. Venenatis netus pellentesque et tristique. Venenatis ac
-            ut id sed magna viverra.Venenatis netus pellentesque et tristique.
-            Venenatis ac ut id sed magna viverra.Venenatis netus pellentesque et
-            tristique. Venenatis ac ut id sed magna viverra. Venenatis ac ut id
-            sed magna viverra.Venenatis netus pellentesque et tristique.
-            Venenatis ac ut id sed magna viverra.Venenatis ac ut id sed magna
-            viverra.Venenatis netus pellentesque et tristique.
-          </p>
-          <a href="#form-section" class="button-blue"
-            ><span>Get for 100$</span></a
-          >
+          <div id="content">
+            <h3>Program PRO+</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur. Nibh egestas congue diam
+              cursus nunc. Venenatis netus pellentesque et tristique. Venenatis
+              ac ut id sed magna viverra.Venenatis netus pellentesque et
+              tristique. Venenatis ac ut id sed magna viverra.Venenatis netus
+              pellentesque et tristique. Venenatis ac ut id sed magna viverra.
+              Venenatis ac ut id sed magna viverra.Venenatis netus pellentesque
+              et tristique. Venenatis ac ut id sed magna viverra.Venenatis ac ut
+              id sed magna viverra.Venenatis netus pellentesque et tristique.
+            </p>
+            <a href="#form-section">Get for 100$</a>
+          </div>
         </div>
       </section>
       <section id="form-section">
