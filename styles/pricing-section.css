@@ -1,15 +1,13 @@
 #pricing-section {
   background-color: white;
   margin-top: 20px;
-  padding: 0 60px 60px 60px;
+  padding: 60px;
 }
 
 #pricing-section > h3 {
   font-size: 48px;
   font-weight: 700;
-  line-height: 36px;
   text-align: center;
-  padding-top: 50px;
 }
 
 .tab {
@@ -26,7 +24,6 @@
   background-color: black;
   font-size: 28px;
   font-weight: 700;
-  line-height: 36px;
 }
 
 .tab .active {
@@ -41,22 +38,24 @@
 .tabcontent {
   border: 1px solid black;
   border-radius: 0 0 10px 10px;
+  max-height: 600px;
+  overflow: scroll;
 }
 
 .tabcontent #content {
   display: none;
+  padding: 30px;
 }
 
 .tabcontent #content.active {
   display: block;
-  padding: 30px 0 0 30px;
   max-width: 1200px;
 }
 
 .tabcontent .active > h3 {
   font-size: 36px;
   font-weight: 700;
-  line-height: 36px;
+
   letter-spacing: 1.8px;
 }
 
@@ -73,8 +72,8 @@
   justify-content: center;
   align-items: center;
   min-width: 180px;
-  margin: 48px 0 30px 0;
-  width: 380px;
+  margin-top: 30px;
+  max-width: 380px;
   height: 70px;
   font-size: 30px;
   font-weight: 700;

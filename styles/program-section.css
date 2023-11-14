@@ -57,18 +57,10 @@
   line-height: 36px;
 }
 
-.button-block {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 70px;
-}
-
 .get-program-button {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-width: 180px;
   width: 350px;
   height: 80px;
   font-size: 30px;

@@ -1,18 +1,19 @@
 #advantages-section {
   background-color: white;
+  padding: 0 60px;
 }
 
-.container {
-  padding: 60px 60px 0 60px;
+#advantages-section .container {
+  margin-top: 60px;
 }
 
-.container > h2 {
+#advantages-section .container > h2 {
   font-size: 36px;
   font-weight: 700;
   letter-spacing: 1.8px;
 }
 
-.container > p {
+#advantages-section .container > p {
   max-width: 1020px;
   margin-top: 20px;
   font-size: 20px;
@@ -21,7 +22,7 @@
   letter-spacing: 1.2px;
 }
 
-.container > ul {
+#advantages-section .container > ul {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   column-gap: 60px;
@@ -29,7 +30,7 @@
   margin-top: 66px;
 }
 
-.container > ul > li > p {
+#advantages-section .container > ul > li > p {
   color: #4568a1;
   font-size: 20px;
   font-weight: 500;
@@ -37,13 +38,13 @@
   letter-spacing: 0.6px;
 }
 
-.container > ul > li .row {
+#advantages-section .container > ul > li .row {
   display: flex;
   align-items: center;
   gap: 20px;
 }
 
-.container > ul > li .row > h3 {
+#advantages-section .container > ul > li .row > h3 {
   font-size: 24px;
   font-weight: 700;
   line-height: 30px;
@@ -53,14 +54,12 @@
 .enroll-block .content {
   display: flex;
   align-items: center;
-  gap: 30px;
+  gap: 50px;
   padding: 0 45px;
-  margin-top: 102px;
+  margin-top: 100px;
 }
 
 .enroll-block .content > p {
-  max-width: 920px;
-  max-height: 150px;
   font-size: 24px;
   font-weight: 400;
   line-height: 36px;
@@ -71,8 +70,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  min-width: 180px;
-  width: 270px;
+  min-width: 270px;
   height: 80px;
   font-size: 30px;
   font-weight: 700;

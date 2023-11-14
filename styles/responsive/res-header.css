@@ -1,0 +1,21 @@
+@media (max-width: 992px) {
+  .mobile-menu-button {
+    display: flex;
+  }
+
+  header > nav {
+    display: none;
+  }
+}
+
+@media (max-width: 650px) {
+  header {
+    padding: 0 30px;
+  }
+}
+
+@media (max-width: 430px) {
+  header {
+    padding: 5px 10px;
+  }
+}
