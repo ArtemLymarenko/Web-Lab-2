@@ -15,15 +15,15 @@ footer .logo-footer {
   gap: 20px;
 }
 
-footer .logo-footer .logo-img {
-  margin-right: 10px;
+footer .logo-footer > p {
+  font-size: 14px;
 }
 
 footer .nav-footer > ul {
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 46px;
+  justify-content: space-between;
+  gap: 15px;
 }
 
 footer .nav-footer > ul > li > a {
