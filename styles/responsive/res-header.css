@@ -2,6 +2,9 @@
   .position-nav .mobile-menu-button {
     display: flex;
   }
+  .position-nav {
+    width: 100%;
+  }
 
   .position-nav .mobile-menu-button:hover > span {
     background-color: #005ef1;
