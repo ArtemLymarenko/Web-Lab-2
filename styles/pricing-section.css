@@ -35,31 +35,31 @@
   transition: 0.5s ease;
 }
 
-.tabcontent {
+.tabscontent {
   border: 1px solid black;
   border-radius: 0 0 10px 10px;
   max-height: 600px;
   overflow: scroll;
 }
 
-.tabcontent #content {
+.tabscontent #tab_content {
   display: none;
   padding: 30px;
 }
 
-.tabcontent #content.active {
+.tabscontent #tab_content.active {
   display: block;
   max-width: 1200px;
 }
 
-.tabcontent .active > h3 {
+.tabscontent .active > h3 {
   font-size: 36px;
   font-weight: 700;
 
   letter-spacing: 1.8px;
 }
 
-.tabcontent .active > p {
+.tabscontent .active > p {
   margin-top: 30px;
   font-size: 24px;
   font-weight: 400;
@@ -67,7 +67,7 @@
   letter-spacing: 1.2px;
 }
 
-.tabcontent .active > a {
+.tabscontent .active > a {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -82,7 +82,7 @@
   border-radius: 10px;
 }
 
-.tabcontent .active > a:hover {
+.tabscontent .active > a:hover {
   color: #005ef1;
   background: white;
   border: 1px solid #005ef1;

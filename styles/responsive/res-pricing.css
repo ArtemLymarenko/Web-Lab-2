@@ -2,7 +2,7 @@
   #pricing-section > h3 {
     font-size: 36px;
   }
-  .tabcontent {
+  .tabscontent {
     max-height: 500px;
     overflow: scroll;
   }
@@ -15,7 +15,7 @@
   #pricing-section {
     padding: 60px 30px;
   }
-  .tabcontent #content {
+  .tabscontent #tab_content {
     padding: 10px;
   }
 
@@ -24,11 +24,11 @@
     font-size: 24px;
   }
 
-  .tabcontent .active > h3 {
+  .tabscontent .active > h3 {
     font-size: 28px;
   }
 
-  .tabcontent .active > p {
+  .tabscontent .active > p {
     margin-top: 20px;
     font-size: 20px;
     line-height: 36px;
@@ -48,10 +48,10 @@
     height: 45px;
     font-size: 20px;
   }
-  .tabcontent .active > h3 {
+  .tabscontent .active > h3 {
     font-size: 24px;
   }
-  .tabcontent .active > p {
+  .tabscontent .active > p {
     font-size: 18px;
   }
 }

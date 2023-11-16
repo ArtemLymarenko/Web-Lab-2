@@ -15,10 +15,18 @@
   <body>
     <div class="fullpage">
       <header class="header">
-        <a href="/" class="logo-img">
-          <img src="./asserts/images/GOIT.svg" alt="Logo" />
-        </a>
         <nav class="navigation">
+          <div class="position-nav">
+            <a href="/" class="logo-img">
+              <img src="./asserts/images/GOIT.svg" alt="Logo" />
+            </a>
+            <a href="#" class="mobile-menu-button">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </a>
+          </div>
+
           <ul class="menu">
             <li>
               <a href="#advantages-section">Why?</a>
@@ -37,9 +45,6 @@
             </li>
           </ul>
         </nav>
-        <div class="mobile-menu-button">
-          <img src="./asserts/images/media-button.svg" alt="media" />
-        </div>
       </header>
       <section id="hero-section">
         <div class="row" id="hero-banner">
@@ -232,16 +237,14 @@
 
         <!-- Tab links -->
         <div class="tab">
-          <button class="active" onclick="openProgram(event, 'Standart')">
-            Standart
-          </button>
-          <button onclick="openProgram(event, 'PRO')">PRO</button>
-          <button onclick="openProgram(event, 'PRO+')">PRO+</button>
+          <button id="tab_btn" class="active">Standart</button>
+          <button id="tab_btn">PRO</button>
+          <button id="tab_btn">PRO+</button>
         </div>
 
         <!-- Tab content -->
-        <div class="tabcontent">
-          <div id="content" class="active">
+        <div class="tabscontent">
+          <div id="tab_content" class="active">
             <h3>Program Standart</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur. Nibh egestas congue diam
@@ -256,7 +259,7 @@
             <a href="#form-section">Get for 50$</a>
           </div>
 
-          <div id="content">
+          <div id="tab_content">
             <h3>Program PRO</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur. Nibh egestas congue diam
@@ -271,7 +274,7 @@
             <a href="#form-section">Get for 75$</a>
           </div>
 
-          <div id="content">
+          <div id="tab_content">
             <h3>Program PRO+</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur. Nibh egestas congue diam
@@ -310,11 +313,12 @@
               </div>
               <div>
                 <input
-                  type="text"
-                  placeholder="+380-000-00-00"
-                  required
+                  type="tel"
                   id="form-phone"
                   name="phone"
+                  placeholder="+380-000-00-00"
+                  pattern="+380[0-9]{2}[0-9]{3}[0-9]{4}"
+                  required
                 />
               </div>
               <div>
@@ -359,5 +363,6 @@
         </div>
       </footer>
     </div>
+    <script src="./script.js"></script>
   </body>
 </html>

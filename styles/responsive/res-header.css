@@ -1,21 +1,46 @@
 @media (max-width: 992px) {
-  .mobile-menu-button {
+  .position-nav .mobile-menu-button {
     display: flex;
   }
 
-  header > nav {
+  .position-nav .mobile-menu-button:hover > span {
+    background-color: #005ef1;
+    height: 4px;
+    transition: all 0.4s ease-in-out;
+  }
+
+  header .menu {
     display: none;
+  }
+
+  header > nav {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  header .menu li > a {
+    font-size: 24px;
+  }
+
+  header .menu {
+    flex-direction: column;
+    width: 100%;
+    gap: 8px;
+  }
+
+  header .menu.active {
+    display: flex;
   }
 }
 
 @media (max-width: 650px) {
   header {
-    padding: 0 30px;
+    padding: 15px 30px;
   }
 }
 
 @media (max-width: 430px) {
   header {
-    padding: 5px 10px;
+    padding: 10px;
   }
 }
